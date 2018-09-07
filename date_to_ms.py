@@ -20,13 +20,11 @@ def main():
   elif args.ts:  
     print "Local time: " + datetime.datetime.fromtimestamp(args.ts).strftime("%c %z")
   else:
-    parser.print_help()
+    arg_parser.print_help()
 
 # Reference:
 # http://pytz.sourceforge.net/#localized-times-and-date-arithmetic
 # https://docs.python.org/2/library/datetime.html#strftime-strptime-behavior
-
-
 
 
 if __name__ == "__main__":
